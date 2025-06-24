@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  /* Topo */
+  .topo {
+    background-color: #76c5e7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+  
+  .topo .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .topo nav a {
+    margin-left: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .topo nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 2rem 2rem;
+    background-color: #f3f4f6;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: #facc15;
+    color: #1f2937;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #eab308;
+  }
+  
+  /* Rodapé */
+  .rodape {
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-top: 3rem;
+  }
+
+  img{
+    height: 20vh;
+   
+  }
+
+  iframe{
+   box-sizing: border-box;
+    margin-right: 10px;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f6f8;
+    color: #222;
+  }
+  
+  header {
+    background-color: #000;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    color: #ffc107;
+  }
+  
+  .timeline-section {
+    padding: 3rem 1rem;
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .timeline-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #222;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 1rem;
+    border-left: 4px solid #ffc107;
+  }
+  
+  .event {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .event .dot {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    background: #ffc107;
+    border: 3px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 0.3s;
+  }
+  
+  .event:hover .dot {
+    transform: scale(1.3);
+  }
+  
+  .event .content {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  footer {
+    background: #e9ebee;
+    padding: 1rem;
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  /* CONTATO */
+.contato-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mapa {
+  margin: 2rem 0;
+}
+
+.mapa-placeholder {
+  background-color: #ddd;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
+  border-radius: 10px;
+}
+
+.email-contato p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.email-contato a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redes-sociais {
+  margin-top: 2rem;
+}
+
+.icones-sociais {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.icones-sociais a {
+  font-size: 2rem;
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+.icones-sociais a:hover {
+  color: #ffaa00;
+}
+
+.carousel {
+  position: relative;
+  max-width: 80%;
+  height: 80vh;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: auto auto;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  height: 400px; /* ajuste conforme sua imagem */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f8fa;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f2f4f7;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 400px;
+}
+
+.carousel .slide {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel .slide.active {
+  opacity: 1;
+}
+
+/* Indicadores (pager) */
+.indicators {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.indicators .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicators .dot.active {
+  background-color: #111;
+}
+
+/* Seções */
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+section p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Rodapé */
+footer {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.contagem-regressiva {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contagem-regressiva h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.timer div {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.timer span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.timer small {
+  display: block;
+  font-size: 0.875rem;
+  color: #ccc;
+}
